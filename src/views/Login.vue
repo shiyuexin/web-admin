@@ -1,8 +1,5 @@
 <template>
-  <div class="page">
-    <p>23</p>
-    <el-button>默认按钮</el-button>
-  </div>
+  <div class="page"></div>
 </template>
 
 <script>
