@@ -1,5 +1,7 @@
 <template>
-  <div class="page"></div>
+  <div class="login-page">
+    <el-button @click="Login">登录</el-button>
+  </div>
 </template>
 
 <script>
@@ -10,7 +12,9 @@ export default {
     return{}
   },
   methods:{
-    
+    Login(){
+     this.$router.push({ name: 'demo' })
+    }
   },
   mounted(){
     axs.request(axs.baseUrl.GetTimestamp.url, null, axs.baseUrl.GetTimestamp.method).then(res => {
@@ -28,7 +32,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang='less' scoped>
-  .page{
+  .login-page{
     p{
       color:@bg;
     }
