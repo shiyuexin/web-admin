@@ -9,6 +9,7 @@ import axs from "../axios.service";
 export default {
   components:{},
   data(){
+  
     return{}
   },
   methods:{
